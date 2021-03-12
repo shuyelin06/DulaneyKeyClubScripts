@@ -16,8 +16,8 @@ function format(){
 // Creates a Point form
 function createPointForm(spreadsheet){
   // Limits the running of this function to the membership secretary's email
-  if(Session.getActiveUser().getEmail() != data["Email"]){
-    ui.alert("You do not have the permissions to enter events!");
+  if(Session.getActiveUser().getEmail() != memSec){
+    ui.alert("You do not have the permissions to reformat!");
     return;
   }
 

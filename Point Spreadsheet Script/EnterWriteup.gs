@@ -8,7 +8,7 @@ Some variables will be defined in the chance that something wrong occurs.
 // Enters in the data from a given writeup sheet (using its ID)
 function enterWriteup(){
   // Limits the running of this function to the membership secretary's email
-  if(Session.getActiveUser().getEmail() != data["Email"]){
+  if(Session.getActiveUser().getEmail() != memSec){
     ui.alert("You do not have the permissions to enter events!");
     return;
   }

@@ -1,0 +1,21 @@
+// Exports a write-up from the write-up spreadsheet to another spreadsheet
+function exportWriteup() {
+  if(Session.getActiveUser().getEmail() != memSec){
+    ui.alert("You do not have the permissions to use this function!");
+    return;
+  }
+  
+  let sheet = SpreadsheetApp.getActiveSheet();
+  
+  let response = ui.prompt("Please enter the URL of the spreadsheet you would like to export this write-up to.", ui.ButtonSet.OK_CANCEL);
+  if(response.getSelectedButton() == ui.Button.CANCEL || response.getSelectedButton() == ui.Button.CLOSE) return;
+  
+  let exportSS = SpreadsheetApp.openByUrl(response.getResponseText());
+  
+  let exportSheet = sheet.copyTo(exportSS).setName(sheet.getName());
+  
+  exportSheet.getRange("A:I").clearDataValidations();
+  
+  writeup.deleteSheet(sheet);
+  ui.alert("Success!");
+}
