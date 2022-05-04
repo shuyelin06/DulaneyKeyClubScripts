@@ -12,7 +12,7 @@ To restore this system, do the following:
 | [Service Year] Membership Registration | [Service Year] Membership Information |
 | Join the [Service Year] Board! | Board Members |
 
-3) Open the Officer Center spreadsheet. Then, go to Extensions --> Apps Script. Copy and paste every ".gs" file in the Scripts folder, to the opened Scripts Project.
+3) Open the Officer Center spreadsheet. Then, go to Extensions --> Apps Script. Copy and paste every ".gs" file in the Scripts folder, to the opened Scripts Project. In the "Settings.gs" file, update the DriveID, ExampleEventFolderID, and ExampleServiceYearID variables (find the IDs of the corresponding folders as shown below and copy and paste them in).
 4) For each button in the Officer Center spreadsheet, click --> triple dots --> "Assign Script". Link each button to the following function names (copy and paste the names):
 
 | Button Title  | Script Name |

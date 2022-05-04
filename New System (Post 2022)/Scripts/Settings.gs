@@ -20,12 +20,12 @@ const PointsSpreadsheetCell = "C7";
 const InformationSpreadsheetCell = "C8";
 
 /* --- IDs --- */
-const DriveID = "0AHj_YtiQ26Q3Uk9PVA";
+const DriveID = "";
 
-const ExampleEventFolderID  = "1_jhjpzJG_egs_NzmUqukPepsMSGSCiOf"; // Event Folder Template
+const ExampleEventFolderID  = ""; // Event Folder Template
 const EventReplacement = "[Sample Event]"; // String to be replaced with the event name
 
-const ExampleServiceYearID = "1ikyIwRrzQUdRNgt28IBQn6-BZIAmJGjK"; // Service Year Folder Template
+const ExampleServiceYearID = ""; // Service Year Folder Template
 const ServiceYearReplacement = "[Service Year]"; // String to be replaced with the service year
 
 const GeneralFolderID = getValue( GeneralFolderCell ); // General Folder ID
